@@ -1,7 +1,7 @@
 # Progresso Knight
 
 ### Introduction
-Progresso Knight is a mod of the text-based incremental game [Progress Knight](https://github.com/ihtasham42/progress-knight) , developed originally by [Ihtasham42](https://github.com/ihtasham42/progress-knight) and modded by [Villanovasoft](https://github.com/villanovasoft), which can be played on your browser. It's not ready yet, but you can play it now.
+Progresso Knight is a mod of the text-based incremental game [Progress Knight](https://github.com/ihtasham42/progress-knight) , developed originally by [Ihtasham42](https://github.com/ihtasham42) and modded by [Villanovasoft](https://github.com/villanovasoft), which can be played on your browser. It's not ready yet, but you can play it now.
 
 ### What is Progresso Knight about?
 Progresso Knight is a life-sim incremental based in a fantasy/medieval setting, where you must progress through the career ladder and acquire new skills to become the ultimate being.
