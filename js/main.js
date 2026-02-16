@@ -35,10 +35,10 @@ const permanentUnlocks = ["Scheduling", "Shop", "Automation", "Quick task displa
 const jobBaseData = {
     "Mendigo": {name: "Mendigo", maxXp: 50, income: 5},
     "Camponês": {name: "Camponês", maxXp: 100, income: 9},
-    "Fisherman": {name: "Fisherman", maxXp: 200, income: 15},
-    "Miner": {name: "Miner", maxXp: 400, income: 40},
-    "Blacksmith": {name: "Blacksmith", maxXp: 800, income: 80},
-    "Merchant": {name: "Merchant", maxXp: 1600, income: 150},
+    "Pescador": {name: "Pescador", maxXp: 200, income: 15},
+    "Minerador": {name: "Minerador", maxXp: 400, income: 40},
+    "Ferreiro": {name: "Ferreiro", maxXp: 800, income: 80},
+    "Mercador": {name: "Mercador", maxXp: 1600, income: 150},
 
     "Squire": {name: "Squire", maxXp: 100, income: 5},
     "Footman": {name: "Footman", maxXp: 1000, income: 50},
@@ -102,7 +102,7 @@ const itemBaseData = {
 }
 
 const jobCategories = {
-    "Common work": ["Mendigo", "Camponês", "Fisherman", "Miner", "Blacksmith", "Merchant"],
+    "Common work": ["Mendigo", "Camponês", "Pescador", "Minerador", "Ferreiro", "Mercador"],
     "Military" : ["Squire", "Footman", "Veteran footman", "Knight", "Veteran knight", "Elite knight", "Holy knight", "Legendary knight"],
     "The Arcane Association" : ["Student", "Apprentice mage", "Mage", "Wizard", "Master wizard", "Chairman"]
 }
@@ -134,10 +134,10 @@ const headerRowColors = {
 const tooltips = {
     "Mendigo": "Struggle day and night for a couple of copper coins. It feels like you are at the brink of death each day.",
     "Camponês": "Plow the fields and grow the crops. It's not much but it's honest work.",
-    "Fisherman": "Reel in various fish and sell them for a handful of coins. A relaxing but still a poor paying job.",
-    "Miner": "Delve into dangerous caverns and mine valuable ores. The pay is quite meager compared to the risk involved.",
-    "Blacksmith": "Smelt ores and carefully forge weapons for the military. A respectable and OK paying commoner job.",
-    "Merchant": "Travel from town to town, bartering fine goods. The job pays decently well and is a lot less manually-intensive.",
+    "Pescador": "Reel in various fish and sell them for a handful of coins. A relaxing but still a poor paying job.",
+    "Minerador": "Delve into dangerous caverns and mine valuable ores. The pay is quite meager compared to the risk involved.",
+    "Ferreiro": "Smelt ores and carefully forge weapons for the military. A respectable and OK paying commoner job.",
+    "Mercador": "Travel from town to town, bartering fine goods. The job pays decently well and is a lot less manually-intensive.",
 
     "Squire": "Carry around your knight's shield and sword along the battlefield. Very meager pay but the work experience is quite valuable.",
     "Footman": "Put down your life to battle with enemy soldiers. A courageous, respectable job but you are still worthless in the grand scheme of things.",
@@ -1070,10 +1070,10 @@ gameData.requirements = {
     //Common work
     "Mendigo": new TaskRequirement([getTaskElement("Mendigo")], []),
     "Camponês": new TaskRequirement([getTaskElement("Camponês")], [{task: "Mendigo", requirement: 10}]),
-    "Fisherman": new TaskRequirement([getTaskElement("Fisherman")], [{task: "Camponês", requirement: 10}]),
-    "Miner": new TaskRequirement([getTaskElement("Miner")], [{task: "Strength", requirement: 10}, {task: "Fisherman", requirement: 10}]),
-    "Blacksmith": new TaskRequirement([getTaskElement("Blacksmith")], [{task: "Strength", requirement: 30}, {task: "Miner", requirement: 10}]),
-    "Merchant": new TaskRequirement([getTaskElement("Merchant")], [{task: "Bargaining", requirement: 50}, {task: "Blacksmith", requirement: 10}]),
+    "Pescador": new TaskRequirement([getTaskElement("Pescador")], [{task: "Camponês", requirement: 10}]),
+    "Minerador": new TaskRequirement([getTaskElement("Minerador")], [{task: "Strength", requirement: 10}, {task: "Pescador", requirement: 10}]),
+    "Ferreiro": new TaskRequirement([getTaskElement("Ferreiro")], [{task: "Strength", requirement: 30}, {task: "Minerador", requirement: 10}]),
+    "Mercador": new TaskRequirement([getTaskElement("Mercador")], [{task: "Bargaining", requirement: 50}, {task: "Ferreiro", requirement: 10}]),
 
     //Military 
     "Squire": new TaskRequirement([getTaskElement("Squire")], [{task: "Strength", requirement: 5}]),
