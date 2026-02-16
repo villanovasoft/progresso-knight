@@ -33,7 +33,7 @@ const baseGameSpeed = 4
 const permanentUnlocks = ["Scheduling", "Shop", "Automation", "Quick task display"]
 
 const jobBaseData = {
-    "Beggar": {name: "Beggar", maxXp: 50, income: 5},
+    "Mendigo": {name: "Mendigo", maxXp: 50, income: 5},
     "Farmer": {name: "Farmer", maxXp: 100, income: 9},
     "Fisherman": {name: "Fisherman", maxXp: 200, income: 15},
     "Miner": {name: "Miner", maxXp: 400, income: 40},
@@ -102,7 +102,7 @@ const itemBaseData = {
 }
 
 const jobCategories = {
-    "Common work": ["Beggar", "Farmer", "Fisherman", "Miner", "Blacksmith", "Merchant"],
+    "Common work": ["Mendigo", "Farmer", "Fisherman", "Miner", "Blacksmith", "Merchant"],
     "Military" : ["Squire", "Footman", "Veteran footman", "Knight", "Veteran knight", "Elite knight", "Holy knight", "Legendary knight"],
     "The Arcane Association" : ["Student", "Apprentice mage", "Mage", "Wizard", "Master wizard", "Chairman"]
 }
@@ -132,7 +132,7 @@ const headerRowColors = {
 }
 
 const tooltips = {
-    "Beggar": "Struggle day and night for a couple of copper coins. It feels like you are at the brink of death each day.",
+    "Mendigo": "Struggle day and night for a couple of copper coins. It feels like you are at the brink of death each day.",
     "Farmer": "Plow the fields and grow the crops. It's not much but it's honest work.",
     "Fisherman": "Reel in various fish and sell them for a handful of coins. A relaxing but still a poor paying job.",
     "Miner": "Delve into dangerous caverns and mine valuable ores. The pay is quite meager compared to the risk involved.",
@@ -870,7 +870,7 @@ function rebirthReset() {
 
     gameData.coins = 0
     gameData.days = 365 * 14
-    gameData.currentJob = gameData.taskData["Beggar"]
+    gameData.currentJob = gameData.taskData["Mendigo"]
     gameData.currentSkill = gameData.taskData["Concentration"]
     gameData.currentProperty = gameData.itemData["Homeless"]
     gameData.currentMisc = []
@@ -1048,7 +1048,7 @@ createData(gameData.taskData, jobBaseData)
 createData(gameData.taskData, skillBaseData)
 createData(gameData.itemData, itemBaseData) 
 
-gameData.currentJob = gameData.taskData["Beggar"]
+gameData.currentJob = gameData.taskData["Mendigo"]
 gameData.currentSkill = gameData.taskData["Concentration"]
 gameData.currentProperty = gameData.itemData["Homeless"]
 gameData.currentMisc = []
@@ -1068,8 +1068,8 @@ gameData.requirements = {
     "Quick task display": new AgeRequirement([document.getElementById("quickTaskDisplay")], [{requirement: 20}]),
 
     //Common work
-    "Beggar": new TaskRequirement([getTaskElement("Beggar")], []),
-    "Farmer": new TaskRequirement([getTaskElement("Farmer")], [{task: "Beggar", requirement: 10}]),
+    "Mendigo": new TaskRequirement([getTaskElement("Mendigo")], []),
+    "Farmer": new TaskRequirement([getTaskElement("Farmer")], [{task: "Mendigo", requirement: 10}]),
     "Fisherman": new TaskRequirement([getTaskElement("Fisherman")], [{task: "Farmer", requirement: 10}]),
     "Miner": new TaskRequirement([getTaskElement("Miner")], [{task: "Strength", requirement: 10}, {task: "Fisherman", requirement: 10}]),
     "Blacksmith": new TaskRequirement([getTaskElement("Blacksmith")], [{task: "Strength", requirement: 30}, {task: "Miner", requirement: 10}]),
