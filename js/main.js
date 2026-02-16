@@ -622,7 +622,7 @@ function updateText() {
     document.getElementById("evilGainDisplay").textContent = getEvilGain().toFixed(1)
 
     document.getElementById("timeWarpingDisplay").textContent = "x" + gameData.taskData["Time warping"].getEffect().toFixed(2)
-    document.getElementById("timeWarpingButton").textContent = gameData.timeWarpingEnabled ? "Disable warp" : "Enable warp"
+    document.getElementById("timeWarpingButton").textContent = gameData.timeWarpingEnabled ? "Normal" : "Acelerar"
 }
 
 function setSignDisplay() {
