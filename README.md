@@ -1,17 +1,25 @@
-# Progresso Knight
+# O Progresso do Cavaleiro
 
-### Introduction
-Progresso Knight is a mod of the text-based incremental game [Progress Knight](https://github.com/ihtasham42/progress-knight) , developed originally by [Ihtasham42](https://github.com/ihtasham42) and modded by [Villanovasoft](https://github.com/villanovasoft), which can be played on your browser. It's not ready yet, but you can play it now.
+### Introdução
+**O Progresso do Cavaleiro** é um mod do jogo incremental baseado em texto [Progress Knight](https://github.com/ihtasham42/progress-knight), desenvolvido originalmente por [Ihtasham42](https://github.com/ihtasham42) e modificado por [Villanovasoft](https://github.com/villanovasoft). O jogo pode ser jogado diretamente no seu navegador. Ele ainda está em desenvolvimento, mas você já pode experimentá-lo agora.
 
-### What is Progresso Knight about?
-Progresso Knight is a life-sim incremental based in a fantasy/medieval setting, where you must progress through the career ladder and acquire new skills to become the ultimate being.
+### Sobre o que é O Progresso do Cavaleiro?
+O Progresso do Cavaleiro é um simulador de vida incremental ambientado em um cenário de fantasia medieval, onde você deve progredir na hierarquia profissional e adquirir novas habilidades para se tornar o ser supremo.
 
-You first start off as a beggar, barely being able to feed yourself as the days go by. However, over the years you learn new skills and gain plenty of work experience to enter new high paying jobs while managing your living expenses...
+Você começa como um **mendigo**, mal conseguindo se sustentar enquanto os dias passam. No entanto, ao longo dos anos, você aprenderá novas habilidades e ganhará experiência de trabalho suficiente para ingressar em novas profissões com salários melhores, enquanto gerencia seus custos de vida...
 
-Will you decide to take the easy route of doing simple commoner work? Or will you go through harsh training to climb the ranks within the military? Or maybe will you decide to study hard and enrol in a magic academy, learning life-impacting spells? Your career path is open-ended, the decision is up to you.
+Você escolherá o caminho mais fácil, realizando trabalhos simples de plebeu? Ou passará por um treinamento árduo para subir de patente no exército? Talvez decida estudar com afinco e se matricular em uma academia de magia, aprendendo feitiços que mudam a vida? Sua carreira está em aberto; a decisão é sua.
 
-Eventually, your age will catch up to you. You will be given an option to prestige and gain xp multipliers (based on the performance of your current life) for your next life at the cost of losing all your levels and assets. Fear not though, as you will re-gain your levels much, much more quickly than in your previous life...
+Eventualmente, a idade chegará para você. Será dada a opção de realizar um **prestígio** e ganhar multiplicadores de XP (baseados no desempenho da sua vida atual) para a sua próxima vida, ao custo de perder todos os seus níveis e bens. Mas não tema: você recuperará seus níveis muito, muito mais rápido do que em sua vida anterior...
 
-### Where can I play Progresso Knight?
-Progresso Knight can be played on the following site:  
-- [Github Pages](https://villanovasoft.github.io/progresso-knight/)  
+### Onde posso jogar O Progresso do Cavaleiro?
+O Progresso do Cavaleiro pode ser jogado no seguinte link:  
+- [Github Pages](https://villanovasoft.github.io/progresso-knight/)
+
+---
+
+### Créditos e Localização
+Este projeto é uma versão modificada e localizada do jogo original.
+* **Jogo Original:** [Progress Knight](https://github.com/ihtasham42/progress-knight) por Ihtasham42.
+* **Desenvolvedor do Mod:** [Villanovasoft](https://github.com/villanovasoft).
+* **Tradução e Adaptação:** O texto e as mecânicas foram adaptados para o Português (Brasil) visando uma experiência mais natural para a comunidade brasileira, incluindo termos específicos de RPG e ajustes de interface.
