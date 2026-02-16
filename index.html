@@ -14,7 +14,7 @@
             <div class="panel w3-padding" style="width: 300px; height: auto; float: left">
                 <span id="deathText">
                     <div style="font-size: large; color: red">A idade chegou para você</div>
-                    <div class="sidebar-element" style="color: gray">Your age has met your lifespan, use the amulet to rebirth before you pass away</div>
+                    <div class="sidebar-element" style="color: gray">Sua idade atingiu o seu limite de vida; use o amuleto para renascer antes de falecer</div>
                 </span>
 
                 <div class="" style="font-size: large">Idade: <span id="ageDisplay">14</span> anos e <span id="dayDisplay">0</span> dias</div>
@@ -24,12 +24,12 @@
 
                 <span id="automation" class="inline" style="margin-left: 8px">
                     <span>
-                        <div class="inline">Auto-promote</div>
+                        <div class="inline">Auto-promover</div>
                         <input type="checkbox" class="inline" id="autoPromote">
                     </span>
                     </br>
                     <span>
-                        <div class="inline">Auto-learn</div>
+                        <div class="inline">Auto-aprender</div>
                         <input type="checkbox" class="inline sidebar-element" id="autoLearn">
                     </span>
                 </span>
@@ -49,13 +49,13 @@
                         <span></span>
                         <span></span>
                     </span></li>
-                    <li><span style="color: green">Receitas/dia: </span><span id="incomeDisplay">
+                    <li><span style="color: green">Receita/dia: </span><span id="incomeDisplay">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                     </span></li>
-                    <li><span style="color: red">Despesas/dia: </span><span id="expenseDisplay">
+                    <li><span style="color: red">Despesa/dia: </span><span id="expenseDisplay">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -68,21 +68,21 @@
                         <div class="progress-fill progressFill" style="background-color:rgb(225, 165, 0)"></div>
                         <div class="progress-text name">Task</div>
                     </div>
-                    <div class="sidebar-element" style="color: gray">Current job</div>
+                    <div class="sidebar-element" style="color: gray">Trabalho atual</div>
 
                     <div style="width: 230px" class="small-margin skill progress-bar progressBar">
                         <div class="progress-fill progressFill" style="background-color:rgb(225, 165, 0)"></div>
-                        <div class="progress-text name">Task</div>              
+                        <div class="progress-text name">Tarefa</div>              
                     </div>
-                    <div class="sidebar-element" style="color: gray">Current skill</div>
+                    <div class="sidebar-element" style="color: gray">Habilidade atual</div>
                 </span>
 
-                <div style="font-size: large"><span style="color: rgb(15, 105, 207)">Happiness: </span><span id="happinessDisplay"></span></div>
-                <div style="color: gray" class="sidebar-element">Affects all xp gain</div>
+                <div style="font-size: large"><span style="color: rgb(15, 105, 207)">Felicidade: </span><span id="happinessDisplay"></span></div>
+                <div style="color: gray" class="sidebar-element">Afeta todo o ganho de xp</div>
 
                 <span id="evilInfo">
-                    <div style="font-size: large"><span style="color: rgb(200, 0, 0)">Evil: </span><span id="evilDisplay"></span></div>
-                    <div style="color: gray" class="sidebar-element">Affects dark magic xp gain</div>
+                    <div style="font-size: large"><span style="color: rgb(200, 0, 0)">Maldade: </span><span id="evilDisplay"></span></div>
+                    <div style="color: gray" class="sidebar-element">Afeta o ganho de experiência em magia sombria.</div>
                 </span>
 
                 <!--
@@ -98,39 +98,39 @@
                 -->
 
                 <span id="timeWarping">
-                    <div style="font-size: large"><span style="color: rgb(204, 34, 219)">Time warping: </span><span id="timeWarpingDisplay"></span></div>
-                    <div style="color: gray">Affects game speed</div>
-                    <button id="timeWarpingButton" class="w3-button button sidebar-element" style="margin-top: 5px; width:150px" onClick="setTimeWarping()">Enable warp</button>
+                    <div style="font-size: large"><span style="color: rgb(204, 34, 219)">Distorção Temporal: </span><span id="timeWarpingDisplay"></span></div>
+                    <div style="color: gray">Afeta a velocidade do jogo</div>
+                    <button id="timeWarpingButton" class="w3-button button sidebar-element" style="margin-top: 5px; width:150px" onClick="setTimeWarping()">Habilitar distorção</button>
                 </span>
             </div>
 
             <div class="panel w3-margin-left" style="width: 900px; height: 40px; float: left">
-                <div class="w3-button w3-bar-item tabButton" id="jobTabButton" onClick="setTab(this, 'jobs')">Jobs</div>
-                <div class="w3-button w3-bar-item tabButton" onClick="setTab(this, 'skills')">Skills</div>
-                <div class="w3-button w3-bar-item tabButton" id="shopTabButton" onClick="setTab(this, 'shop')">Shop</div>
-                <div class="w3-button w3-bar-item tabButton" id="rebirthTabButton" onClick="setTab(this, 'rebirth')">Amulet</div>
-                <div class="w3-button w3-bar-item tabButton" onClick="setTab(this, 'settings')" style="float: right">Settings</div>
+                <div class="w3-button w3-bar-item tabButton" id="jobTabButton" onClick="setTab(this, 'jobs')">Trabalhos</div>
+                <div class="w3-button w3-bar-item tabButton" onClick="setTab(this, 'skills')">Habilidades</div>
+                <div class="w3-button w3-bar-item tabButton" id="shopTabButton" onClick="setTab(this, 'shop')">Loja</div>
+                <div class="w3-button w3-bar-item tabButton" id="rebirthTabButton" onClick="setTab(this, 'rebirth')">Amuleto</div>
+                <div class="w3-button w3-bar-item tabButton" onClick="setTab(this, 'settings')" style="float: right">Ajustes</div>
             </div>
 
             <div class="panel w3-margin-left w3-margin-top w3-padding" style="width: 900px; height: auto; float: left">
                 <template class="headerRowTaskTemplate">
                     <tr>
-                        <th class="category" style="width: 250px">Job</th>
-                        <th>Level</th>
-                        <th class="valueType">Value type</th>
-                        <th>Xp/day</th>
-                        <th>Xp left</th>
-                        <th class="maxLevel">Max level</th>
-                        <th class="skipSkill">Skip</th>
+                        <th class="category" style="width: 250px">Trabalho</th>
+                        <th>Nível</th>
+                        <th class="valueType">Tipo de valor</th>
+                        <th>Xp/dia</th>
+                        <th>Xp restante</th>
+                        <th class="maxLevel">Nível máx.</th>
+                        <th class="skipSkill">Pular</th>
                     </tr>
                 </template>
 
                 <template class="headerRowItemTemplate">
                     <tr>
                         <th class="category" style="width: 250px">Item</th>
-                        <th style="width: 100px">Active</th>
-                        <th style="width: 250px">Effect</th>
-                        <th>Expense/day</th>
+                        <th style="width: 100px">Ativo</th>
+                        <th style="width: 250px">Efeito</th>
+                        <th>Despesa/dia</th>
                     </tr>
                 </template>
 
@@ -139,11 +139,11 @@
                         <td>
                             <div class="progress-bar progressBar tooltip">
                                 <div class="progress-fill progressFill"></div>
-                                <div class="progress-text name">Task</div>
+                                <div class="progress-text name">Tarefa</div>
                                 <span class="tooltipText"></span>
                             </div>
                         </td>
-                        <td class="level">Level</td>
+                        <td class="level">Nível</td>
                         <td class="value">
                             <div class="effect"></div>
                             <div class="income">
@@ -153,9 +153,9 @@
                                 <span></span>
                             </div>
                         </td>
-                        <td class="xpGain">Xp/day</td>
-                        <td class="xpLeft">Xp left</td>
-                        <td class="maxLevel">Max level</td>
+                        <td class="xpGain">Xp/dia</td>
+                        <td class="xpLeft">Xp restante</td>
+                        <td class="maxLevel">Nível máx.</td>
                         <td class="skipSkill">
                             <input class="checkbox" type="checkbox"></input>
                         </td>
@@ -189,7 +189,7 @@
 
                 <template class="requiredRowTemplate">
                     <td class="w3-text-gray" style="padding-left: 16px" colspan=5>
-                        Required: 
+                        Necessário: 
                         <span class="value" colspan=5>
                             <span class="levels"></span>
                             <span class="coins">
@@ -267,26 +267,26 @@
                 <div class="tab" id="settings">
                     <ul>
                         <li>
-                            <h2>Import/export save</h2>
-                            <button class="w3-button button" onClick="importGameData()">Import</button>
-                            <button class="w3-button button" onClick="exportGameData()">Export</button>
+                            <h2>Importar/exportar save</h2>
+                            <button class="w3-button button" onClick="importGameData()">Importar</button>
+                            <button class="w3-button button" onClick="exportGameData()">Exportar</button>
                             <form style="margin-top: 16px"> 
                                 <input id="importExportBox" type="text" style="width:300px; height:30px"></input>
                             </form>
                         </li>
                         <li>
-                            <h2>Toggle light/dark mode</h2>
-                            <button class="w3-button button" onClick="setLightDarkMode()">Toggle</button>
+                            <h2>Alternar modo claro/escuro</h2>
+                            <button class="w3-button button" onClick="setLightDarkMode()">Alternar</button>
                         </li>
                         <li>
-                            <h2>Join the discord community!</h2>
+                            <h2>Junte-se à comunidade do Discord!</h2>
                             <a href="https://discord.gg/fTRS4pHGka" target="_blank">
                                 <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png" width="100" height="100"></img>
                             </a>
                         </li>
                         <li>
-                            <h2>Hard reset game</h2>
-                            <button class="w3-button button w3-red" onClick="resetGameData()">Reset</button>
+                            <h2>Hard reset (reiniciar jogo)</h2>
+                            <button class="w3-button button w3-red" onClick="resetGameData()">Resetar</button>
                         </li>
                     </ul>
                 </div>
